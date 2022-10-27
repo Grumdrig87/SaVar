@@ -1,5 +1,11 @@
 jQuery(document).ready(function($) {
   
+  $('[data-fav]').on('click', function(){
+    $(this).toggleClass('red');
+  })
+  $('[data-color]').click(function() {
+    $(this).addClass('active').siblings().removeClass('active');
+  })
   // burger
   $('[data-burger]').click(function() {
       $('html').toggleClass("open");
@@ -20,7 +26,27 @@ jQuery(document).ready(function($) {
     });
   };
   closeBurger();
-  
+  //slider
+  if (jQuery('[data-best]').length > 0) {
+    $('[data-best]').slick({
+        dots: false,
+        speed: 300,
+        slidesToShow: 4,
+        infinite: true,
+        responsive: [{
+            breakpoint: 993,
+            settings: {
+              slidesToShow: 2,
+            }
+        },{
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              variableWidth: true,
+            }
+        }, ]
+    });
+}
   //adaptive
   if ($(window).width() < 994) {
     closeBurger ();
