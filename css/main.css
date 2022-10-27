@@ -47,8 +47,12 @@ body.open {
 	margin: 0 auto;
 	overflow: hidden;
 }
-.container {
+.container-l {
 	width: 1540px;
+	margin: 0 auto;
+}
+.container {
+	width: 1180px;
 	margin: 0 auto;
 }
 li {
@@ -222,10 +226,15 @@ input {
 	outline: none;
 }
 .btn {
-	
+	background: #E71D73;
+	color: #fff;
+	-webkit-border-radius: 100px;
+	   -moz-border-radius: 100px;
+	        border-radius: 100px;
 }
 .btn:hover {
-	
+	opacity: 0.8;
+	text-decoration: none;
 }
 .center {
 	text-align: center;
@@ -358,4 +367,39 @@ input {
 }
 .header__nav a svg {
 	margin-right: 10px;
+}
+
+.main {
+	background: url('../img/main-bg.png') no-repeat 0 0 / cover;
+	padding: 104px 0 570px;
+}
+.main__wrap {
+	width: 47%;
+	margin-left: auto;
+}
+.main__wrap .title-m {
+	max-width: 476px;
+	color: #E71D73;
+	margin-bottom: 25px;
+}
+.main__wrap p {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	margin-bottom: 48px;
+	max-width: 389px;
+}
+.main__btn {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 21px;
+	padding: 24px 85px 25px 105px;
+	position: relative;
+}
+.main__btn svg {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 24px;
+	margin: auto 0;
 }
