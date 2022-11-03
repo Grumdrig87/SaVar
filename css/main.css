@@ -553,7 +553,7 @@ input {
 }
 .main__best {
 	margin-top: -283px;
-	padding-bottom: 50px;
+	padding-bottom: 34px;
 }
 .slick-arrow {
 	background: #FFFFFF !important;
@@ -671,7 +671,7 @@ input {
 
 /* ------pijams------ */
 .pijams {
-	padding-bottom: 26px;
+	padding-bottom: 10px;
 }
 .pijams__wrapper {
 	padding: 18px 0 487px;
@@ -753,7 +753,7 @@ input {
 
 /* ----toys----- */
 .toys {
-	padding-bottom: 38px;
+	padding-bottom: 22px;
 }
 .toys__wrapper {
 	padding: 81px 0 504px;
@@ -768,4 +768,109 @@ input {
 	font-weight: 500;
 	max-width: 389px;
 	margin: 0 auto;
+}
+.slick-list {
+	padding-bottom: 16px !important;
+}
+.how {
+	padding-bottom: 68px;
+}
+.how__wrapper {
+	max-width: 1378px;
+	margin: 0 auto;
+	color: #fff;
+	-webkit-border-radius: 50px;
+	   -moz-border-radius: 50px;
+	        border-radius: 50px;
+	background: url('../img/how-bg.png') no-repeat 0 0 / cover;
+	padding: 81px 93px 70px 99px;
+}
+.title-text {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+}
+.how__wrapper .title-text {
+	font-weight: 400;
+	font-size: 42px;
+	line-height: 49px;
+}
+.how__wrapper .title-xl {
+	margin-bottom: 86px;
+}
+.how__card {
+	width: 25%;
+	max-width: 260px;
+	position: relative;
+	text-align: center;
+}
+.how__card:after {
+	content: '';
+	display: block;
+	position: absolute;
+	right: -104px;
+}
+.how__card:nth-child(1)::after {
+	width: 173px;
+	height: 89px;
+	background: url('../img/svg/arr1.svg') no-repeat 0 0 / cover;
+	top: 73px;
+	z-index: 0;
+}
+.how__card:nth-child(2)::after {
+	width: 159px;
+	height: 78px;
+	background: url('../img/svg/arr2.svg') no-repeat 0 0 / cover;
+	top: 55px;
+	z-index: 0;
+}
+.how__card:nth-child(3)::after {
+	width: 158px;
+	height: 79px;
+	background: url('../img/svg/arr3.svg') no-repeat 0 0 / cover;
+	top: 73px;
+	z-index: 0;
+}
+.how__card:nth-child(2n) {
+	padding-top: 115px;
+}
+.how__img {
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	        border-radius: 50%;
+	background: #fff;
+	margin-bottom: 39px;
+	width: 105px;
+	height: 105px;
+}
+.how__title {
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 26px;
+	margin-bottom: 8px;
+}
+/* -----------sale------- */
+
+.sale {
+	padding: 68px 0 59px;
+}
+.sale__wrap {
+	padding: 226px 0 130px;
+	position: relative;
+}
+.sale__wrap:after {
+	content: '';
+	display: block;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	width: 586px;
+	height: 662px;
+	background: url('../img/boy.png') no-repeat 0 0 / cover;
+}
+.sale__info {
+	width: 50%;
+	position: relative;
+	z-index: 2;
 }
