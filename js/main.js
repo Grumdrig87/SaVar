@@ -47,11 +47,38 @@ jQuery(document).ready(function($) {
         }, ]
     });
 }
+if (jQuery('[data-review]').length > 0) {
+  $('[data-review]').slick({
+      dots: false,
+      speed: 300,
+      slidesToShow: 1,
+      infinite: true,
+      nextArrow: '[data-revNext]',
+      responsive: [{
+          breakpoint: 993,
+          settings: {
+            slidesToShow: 1,
+          }
+      },{
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+          }
+      }, ]
+  });
+}
   //adaptive
   if ($(window).width() < 994) {
     closeBurger ();
   }
 
+  //faq
+  if (jQuery('[data-faq]').length > 0) {
+    $('[data-faq]').click(function() {
+        $(this).toggleClass('open');
+        $(this).find('p').slideToggle(300);
+    })
+}
   // select
   function select (data,set,dropclass) {
     if (jQuery(data).length > 0) {

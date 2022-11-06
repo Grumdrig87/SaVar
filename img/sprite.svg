@@ -84,4 +84,7 @@
     <circle cx="13" cy="13" r="13" fill="#E71D73"></circle>
     <path d="M11.074 8.66675L15.4074 13.0001L11.074 17.3334" stroke="white" stroke-width="0.962963" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 12" id="newsarrow">
+    <path d="M1 6H29M29 6L24 1M29 6L24 11" stroke="#E71D73" stroke-linecap="round" stroke-linejoin="round"></path>
+  </symbol>
 </svg>

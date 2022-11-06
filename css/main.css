@@ -874,3 +874,188 @@ input {
 	position: relative;
 	z-index: 2;
 }
+.sale__info .title-text {
+	color: #E71D73;
+}
+.sale__info .title-xl {
+	margin-bottom: 55px;
+}
+.sale__info ul {
+	counter-reset: item;
+	width: 75%;
+}
+.sale__info li {
+	position: relative;
+	padding-left: 26px;
+	font-weight: 500;
+}
+.sale__info li:not(:last-child) {
+	margin-bottom: 32px; 
+}
+.sale__info li .pink {
+	color: #E71D73;
+}
+.sale__info li::before {
+	content: ''counter(item);
+  	counter-increment: item; 
+	display: -webkit-box; 
+	display: -webkit-flex; 
+	display: -moz-box; 
+	display: -ms-flexbox; 
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	font-weight: 500;
+	font-size: 9px;
+	color: #fff;
+	line-height: 11px;
+	background: #E71D73;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 17px;
+	height: 17px;
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	        border-radius: 50%;
+}
+.review__slider .slick-arrow{
+	display: none !important;
+}
+.review__info {
+	width: 38%;
+}
+.review {
+	padding: 94px 0 57px;
+	background: #F7F7F7;
+}
+.review .title-text {
+	color: #95AEDB;
+}
+.review .title-xl {
+	margin-bottom: 55px;
+}
+.review__item-img {
+	width: 89px;
+	height: 89px;
+	overflow: hidden;
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	        border-radius: 50%;
+	margin-right: 11px;
+}
+.review__item-name {
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 26px;
+	margin-bottom: 9px;
+}
+.review__item-art {
+	opacity: 0.5;
+	font-weight: 500;
+}
+.review__item-top {
+	margin-bottom: 34px;
+}
+.review__item-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 42px;
+	margin-bottom: 24px;
+}
+.review__item p {
+	font-weight: 500;
+	opacity: 0.7;
+}
+.review__next {
+    background: transparent !important;
+    -webkit-box-shadow: none !important;
+       -moz-box-shadow: none !important;
+            box-shadow: none !important;
+    width: auto !important;
+    height: auto !important;
+	-webkit-box-pack: start !important;
+	-webkit-justify-content: flex-start !important;
+	   -moz-box-pack: start !important;
+	    -ms-flex-pack: start !important;
+	        justify-content: flex-start !important;
+    -webkit-border-radius: 0 !important;
+       -moz-border-radius: 0 !important;
+            border-radius: 0 !important;
+	font-weight: 600 !important;
+	font-size: 18px !important;
+	line-height: 21px !important;			
+	color: #E71D73 !important;
+	display: -webkit-inline-box !important;
+	display: -webkit-inline-flex !important;
+	display: -moz-inline-box !important;
+	display: -ms-inline-flexbox !important;
+	display: inline-flex !important;
+	cursor: pointer;
+}
+.review__next svg {
+	margin-left: 9px;
+}
+.faq {
+	padding: 57px 0 49px;
+}
+.faq .title-xl {
+	margin-bottom: 55px;
+	text-align: center;
+}
+.faq__item {
+	background: #FFFFFF;
+	-webkit-box-shadow: 0px 12px 40px rgba(162, 162, 162, 0.1);
+	   -moz-box-shadow: 0px 12px 40px rgba(162, 162, 162, 0.1);
+	        box-shadow: 0px 12px 40px rgba(162, 162, 162, 0.1);
+	-webkit-border-radius: 25px;
+	   -moz-border-radius: 25px;
+	        border-radius: 25px;
+	position: relative;
+	padding: 33px 85px 33px 50px;
+	cursor: pointer;
+}
+.faq__item:after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	        border-radius: 50%;
+	top: 31px;
+	right: 50px;
+	background: #95AEDB url('../img/faqarr.png') no-repeat center center;
+}
+.faq__item.open:after {
+	-webkit-transform: rotateZ(180deg);
+	   -moz-transform: rotateZ(180deg);
+	    -ms-transform: rotate(180deg);
+	     -o-transform: rotateZ(180deg);
+	        transform: rotateZ(180deg);
+}
+.faq__item:not(:last-child) {
+	margin-bottom: 20px;
+}
+.faq__title {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 28px;
+}
+.faq__info {
+	display: none;
+	margin-top: 24px;
+}
