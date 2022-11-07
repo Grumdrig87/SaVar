@@ -346,7 +346,9 @@ input {
 	position: relative;
 	z-index: 6;
 }
-
+.header__search .header__btn {
+	margin-right: 0 !important;	
+}
 .header__popsearch {
 	position: absolute;
 	background: #F6F6F6;
@@ -1430,4 +1432,50 @@ input {
 	height: 100%;
 	-o-object-fit: cover;
 	   object-fit: cover;
+}
+.toys__bottom {
+	margin-top: -132px;
+	padding-bottom: 91px;
+}
+.toys__list {
+	margin: -12.5px;
+}
+.toys__item-wrap {
+	width: 25%;
+	padding: 12.5px;
+}
+.toys__item {
+	padding: 21px;
+	height: 100%;
+	display: block;
+	background: #FFFFFF;
+	-webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+	   -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+	        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+.toys__item:hover {
+	text-decoration: none;
+	-webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+	   -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+	        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+.toys__item-img {
+	display: block;
+	height: 227px;
+	margin-bottom: 17px;
+}
+.toys__item-img img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	-o-object-fit: contain;
+	   object-fit: contain;
+}
+.toys__item-txt {
+	font-size: 19px;
+	line-height: 23px;
+}
+.toys__item-txt svg {
+	margin-left: 15px;
+	padding-top: 6px;
 }
