@@ -6,12 +6,16 @@ jQuery(document).ready(function($) {
   $('[data-close]').on('click', function(){
     $(this).closest('.header__popsearch').toggleClass('open').slideToggle(300);
   })
-  $('[data-color]').click(function() {
-    $(this).addClass('active').siblings().removeClass('active');
-  })
-  $('[data-fav]').on('click', function(){
-    $(this).toggleClass('red');
-  })
+  if (jQuery('[data-color]').length > 0) {
+    $('[data-color]').click(function() {
+      $(this).addClass('active').siblings().removeClass('active');
+    })
+  }
+  if (jQuery('[data-fav]').length > 0) {
+    $('[data-fav]').on('click', function(){
+      $(this).toggleClass('red');
+    })
+  }
   // burger
   $('[data-burger]').click(function() {
       $('html').toggleClass("open");
