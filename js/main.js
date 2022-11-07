@@ -1,10 +1,16 @@
 jQuery(document).ready(function($) {
   
-  $('[data-fav]').on('click', function(){
-    $(this).toggleClass('red');
+  $('[data-search]').on('click', function(){
+    $(this).parent().find('.header__popsearch').toggleClass('open').slideToggle(300);
+  })
+  $('[data-close]').on('click', function(){
+    $(this).closest('.header__popsearch').toggleClass('open').slideToggle(300);
   })
   $('[data-color]').click(function() {
     $(this).addClass('active').siblings().removeClass('active');
+  })
+  $('[data-fav]').on('click', function(){
+    $(this).toggleClass('red');
   })
   // burger
   $('[data-burger]').click(function() {
