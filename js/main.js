@@ -16,6 +16,34 @@ jQuery(document).ready(function($) {
       $(this).toggleClass('red');
     })
   }
+  if (jQuery('[data-catitem]').length > 0) {
+    $('[data-catitem]').mouseenter(function(){
+      $(this).addClass('open');
+      $(this).find('.category__catalog-bottom').slideDown(300);
+    })
+    $('[data-catitem]').mouseleave(function(){
+      $(this).find('.category__catalog-bottom').slideUp(0);
+      $(this).removeClass('open');
+    })
+  }
+  if (jQuery('[data-cat]').length > 0) {
+    $('[data-cat]').on('click', function(){
+      $('[data-cat]').parent().removeClass('active')
+      $(this).parent().addClass('active');
+    })
+  }
+  if (jQuery('[data-sort]').length > 0) {
+    $('[data-sort]').on('click', function(){
+      $('[data-sort]').removeClass('active')
+      $(this).addClass('active');
+    })
+  }
+  if (jQuery('[data-size]').length > 0) {
+    $('[data-size]').on('click', function(){
+      $('[data-size]').removeClass('active')
+      $(this).addClass('active');
+    })
+  }
   // burger
   $('[data-burger]').click(function() {
       $('html').toggleClass("open");
