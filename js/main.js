@@ -19,7 +19,7 @@ jQuery(document).ready(function($) {
   if (jQuery('[data-catitem]').length > 0) {
     $('[data-catitem]').mouseenter(function(){
       $(this).addClass('open');
-      $(this).find('.category__catalog-bottom').slideDown(300);
+      $(this).find('.category__catalog-bottom').slideDown(0);
     })
     $('[data-catitem]').mouseleave(function(){
       $(this).find('.category__catalog-bottom').slideUp(0);
