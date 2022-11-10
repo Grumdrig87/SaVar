@@ -85,6 +85,27 @@ jQuery(document).ready(function($) {
         }, ]
     });
 }
+if (jQuery('[data-preview]').length > 0) {
+  $('[data-preview]').slick({
+      dots: false,
+      speed: 300,
+      slidesToShow: 3,
+      infinite: false,
+      vertical: true,
+      nextArrow: '[data-fotoarr]',
+      asNavFor: '[data-product]',
+      focusOnSelect: true
+  });
+}
+if (jQuery('[data-product]').length > 0) {
+  $('[data-product]').slick({
+      dots: false,
+      speed: 300,
+      slidesToShow: 1,
+      arrows: false,
+      asNavFor: '[data-preview]'
+  });
+}
 if (jQuery('[data-review]').length > 0) {
   $('[data-review]').slick({
       dots: false,
