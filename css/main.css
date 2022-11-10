@@ -2157,7 +2157,7 @@ input {
 	   -moz-column-gap: 20px;
 	        column-gap: 20px;
 }
-.prod__review-foto div {
+.prod__review-foto a {
 	display: grid;
 	position: relative;
 	-webkit-border-radius: 20px;
@@ -2165,14 +2165,14 @@ input {
 	        border-radius: 20px;
 	overflow: hidden;
 }
-.prod__review-foto div:nth-child(1) {
+.prod__review-foto a:nth-child(1) {
 	grid-column: 1/3;
 	grid-row: 1/3;
 }
-.prod__review-foto div:nth-child(n+4) {
+.prod__review-foto a:nth-child(n+4) {
 	display: none;
 }
-.prod__review-foto div:nth-child(3) a::before {
+.prod__review-foto a:nth-child(3)::before {
 	content: '';
 	display: block;
 	position: absolute;
@@ -2183,20 +2183,69 @@ input {
 	left: 0;
 }
 
-.prod__review-foto div:nth-child(3) a::after {
-	content: '+'counter(foto);
-	counter-increment: foto;
-	display: block;
+.prod__review-foto a:nth-child(3) span {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
 	position: absolute;
 	top: 0;
-	right: 0;
-	bottom: 0;
 	left: 0;
-	margin: auto;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	font-weight: 500;
 	font-size: 30px;
 	line-height: 35px;
 	color: #FFFFFF;
-	width: 20%;
-	height: 20%;
+	width: 100%;
+	height: 100%;
+}
+.sale__graybg {
+	background: #F6F6F6;
+	margin-bottom: 133px;
+}
+.newspage {
+	padding: 40px 0;
+}
+.newspage .title-l {
+	margin-bottom: 16px;
+}
+.news__content {
+	padding: 40px 0 24px;
+}
+.news__content h2 {
+	margin-bottom: 16px;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+}
+.news__content h2:not(:first-child) {
+	margin-top: 32px;
+}
+.news__content h3 {
+	margin-bottom: 12px;
+	margin-top: 24px;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 25px;
+}
+.news__content p {
+	margin-bottom: 12px;
+	line-height: 25px;
+}
+.news__graybg {
+	padding: 43px 0 70px;
+	background: #F7F7F7;
+}
+.news__graybg .title-s {
+	margin-bottom: 25px;
 }
