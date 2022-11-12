@@ -2249,3 +2249,60 @@ input {
 .news__graybg .title-s {
 	margin-bottom: 25px;
 }
+.order {
+	padding: 38px 0 29px;
+}
+.order__title {
+	margin-bottom: 31px;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 100%;
+	text-transform: uppercase;
+}
+.order__left {
+	width: 61.5%;
+}
+.order__right {
+	width: 35.5%;
+}
+.order__card {
+	padding: 28px;
+	background: #F6F6F6;
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+	        border-radius: 10px;
+}
+.order__card:not(:last-child) {
+	margin-bottom: 20px;
+}
+.order__card-title {
+	margin-bottom: 26px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	text-transform: uppercase;
+	color: #0055A5;
+}
+.order__item-img {
+	background: #FFFFFF;
+	border: 0.4px solid #C4C4C4;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
+	width: 66px;
+	height: 74px;
+	margin-right: 20px;
+	display: block;
+}
+.order__item-name {
+	font-size: 16px;
+	line-height: 100%;
+}
+.order__item:not(:last-child) {
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #C4C4C4;
+}
+.order__item-num {
+	margin-left: auto;
+}
