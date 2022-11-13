@@ -51,6 +51,28 @@ jQuery(document).ready(function($) {
       $('[data-nav]').toggleClass("open");
       $('body').toggleClass('open');
   });
+  //plus minus
+  (function quantityProducts() {
+    var $quantityArrowMinus = $("[data-minus]");
+    var $quantityArrowPlus = $("[data-plus]");
+    
+ 
+    $quantityArrowMinus.click(quantityMinus);
+    $quantityArrowPlus.click(quantityPlus);
+ 
+    function quantityMinus() {
+      var $quantityNum = $(this).parent().find("[data-quantity]");
+      if ($quantityNum.val() > 1) {
+        $quantityNum.val(+$quantityNum.val() - 1);
+      }
+    }
+ 
+    function quantityPlus() {
+      var $quantityNum = $(this).parent().find("[data-quantity]");
+      $quantityNum.val(+$quantityNum.val() + 1);
+    }
+  })();
+  
   //miss click burger
   function closeBurger () {
     $(document).mouseup(function (e){ // событие клика по веб-документу

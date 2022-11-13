@@ -101,12 +101,12 @@
                                         </span>
                                     </a>
                                     <div class="order__item-num df aic">
-                                        <button class="order__item-button" data-minus>
-                                            -
+                                        <button class="order__item-button df aic jcc" data-minus>
+                                            <svg width="20" height="20"><use xlink:href="img/sprite.svg#minus"></use></svg>
                                         </button>
-                                        <input type="number" name="quant" data-quantity>
-                                        <button class="order__item-button" data-plus>
-                                            +
+                                        <input type="number" name="quant" value="1" data-quantity>
+                                        <button class="order__item-button df aic jcc" data-plus>
+                                            <svg width="20" height="20"><use xlink:href="img/sprite.svg#plus"></use></svg>
                                         </button>
                                     </div>
                                     <div class="order__item-price">
@@ -123,12 +123,12 @@
                                         </span>
                                     </a>
                                     <div class="order__item-num df aic">
-                                        <button class="order__item-button" data-minus>
-                                            -
+                                        <button class="order__item-button df aic jcc" data-minus>
+                                            <svg width="20" height="20"><use xlink:href="img/sprite.svg#minus"></use></svg>
                                         </button>
-                                        <input type="number" name="quant" data-quantity>
-                                        <button class="order__item-button" data-plus>
-                                            +
+                                        <input type="number" name="quant" value="1" data-quantity>
+                                        <button class="order__item-button df aic jcc" data-plus>
+                                            <svg width="20" height="20"><use xlink:href="img/sprite.svg#plus"></use></svg>
                                         </button>
                                     </div>
                                     <div class="order__item-price">
@@ -145,12 +145,12 @@
                                         </span>
                                     </a>
                                     <div class="order__item-num df aic">
-                                        <button class="order__item-button" data-minus>
-                                            -
+                                        <button class="order__item-button df aic jcc" data-minus>
+                                            <svg width="20" height="20"><use xlink:href="img/sprite.svg#minus"></use></svg>
                                         </button>
-                                        <input type="number" name="quant" data-quantity>
-                                        <button class="order__item-button" data-plus>
-                                            +
+                                        <input type="number" name="quant" value="1" data-quantity>
+                                        <button class="order__item-button df aic jcc" data-plus>
+                                            <svg width="20" height="20"><use xlink:href="img/sprite.svg#plus"></use></svg>
                                         </button>
                                     </div>
                                     <div class="order__item-price">
@@ -187,7 +187,7 @@
                                     <input type="radio" name="delivery" id="delivery1" checked>
                                     <label for="delivery1" class="order__card-deliverycard">
                                         <p>
-                                            <strong>Дешёвая доставка</strong> СДЕКом по Москве и России (совместная акция %) — рассчитать тари
+                                            <strong>Дешёвая доставка</strong> СДЕКом по Москве и России (совместная акция %) — рассчитать тариф
                                         </p>
                                         <span class="order__txt">
                                             У нас заключен договор с курьерской службой СДЕК, что означает более дешевые цены на доставку! Менеджер рассчитает стоимость доставки и свяжется с Вами. Заказы отгружаем в СДЕК ежедневно!
@@ -272,15 +272,62 @@
                                             </strong>
                                         </p>
                                         <p>
-                                            курьеру при получении (Москва, Московская область)
+                                            курьеру при получении (<span>Москва, Московская область</span>)
                                         </p>
                                     </label>
                                 </div>
                             </div>
                         </div>
+                        <div class="order__card">
+                            <div class="order__card-title">
+                                Покупатель
+                            </div>
+                            <div class="order__card-form df fww">
+                                <div class="order__card-formwrap">
+                                    <div class="order__card-formitem">
+                                        <span>
+                                            Имя Фамилия*
+                                        </span>
+                                        <input type="text" name="name" class="order__card-forminput" required>
+                                    </div>
+                                </div>
+                                <div class="order__card-formwrap">
+                                    <div class="order__card-formitem">
+                                        <span>
+                                            Адрес доставки*
+                                        </span>
+                                        <input type="text" name="adress" class="order__card-forminput" required>
+                                    </div>
+                                </div>
+                                <div class="order__card-formwrap">
+                                    <div class="order__card-formitem">
+                                        <span>
+                                            Телефон *
+                                        </span>
+                                        <input type="tel" name="tel" class="order__card-forminput" required>
+                                    </div>
+                                </div>
+                                <div class="order__card-formwrap">
+                                    <div class="order__card-formitem">
+                                        <span>
+                                            E-mail
+                                        </span>
+                                        <input type="email" name="email" class="order__card-forminput">
+                                    </div>
+                                </div>
+                                <div class="order__card-formwrap">
+                                    <div class="order__card-formitem">
+                                        <span>
+                                            Комментарии к заказу:
+                                        </span>
+                                        <textarea name="comment" class="order__card-forminput order__card-formtextarea"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="order__right">
-                        <div class="order__aside">
+                        <div class="order__aside df fdc aic">
                             <div class="order__aside-title">
                                 Заказ на сумму:
                             </div>
