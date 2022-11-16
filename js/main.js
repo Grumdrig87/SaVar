@@ -184,6 +184,14 @@ if (jQuery('[data-review]').length > 0) {
     $('.footer__title').on('click', function(){
       $(this).next('ul').slideToggle(300);
     })
+    if (jQuery('[data-prodrev]').length > 0) {
+      $('[data-prodrev]').slick({
+          dots: false,
+          speed: 300,
+          slidesToShow: 1,
+          infinite: true
+      });
+    }
   }
 
   //faq
