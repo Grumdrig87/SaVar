@@ -6,6 +6,9 @@ jQuery(document).ready(function($) {
   $('[data-close]').on('click', function(){
     $(this).closest('.header__popsearch').toggleClass('open').slideToggle(300);
   })
+  $('[data-cart]').on('click', function(){
+    $(this).closest('.header__btn-wrap').find('[data-cartopen]').toggleClass('open');
+  })
   if (jQuery('[data-color]').length > 0) {
     $('[data-color]').click(function() {
       $(this).addClass('active').siblings().removeClass('active');
@@ -94,6 +97,11 @@ jQuery(document).ready(function($) {
         slidesToShow: 4,
         infinite: true,
         responsive: [{
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+          }
+        },{
             breakpoint: 993,
             settings: {
               slidesToShow: 2,
@@ -101,8 +109,7 @@ jQuery(document).ready(function($) {
         },{
             breakpoint: 768,
             settings: {
-              slidesToShow: 1,
-              variableWidth: true,
+              slidesToShow: 1
             }
         }, ]
     });
@@ -151,6 +158,32 @@ if (jQuery('[data-review]').length > 0) {
   //adaptive
   if ($(window).width() < 994) {
     closeBurger ();
+    $('[data-nav] ul').before('<div class="mobile-menu"></div>');
+    $('[data-gender]').appendTo('.mobile-menu');
+    if (jQuery('[data-donateslider]').length > 0) {
+      $('[data-donateslider]').slick({
+          dots: false,
+          speed: 300,
+          slidesToShow: 2,
+          infinite: true,
+          responsive: [{
+              breakpoint: 993,
+              settings: {
+                slidesToShow: 2,
+              }
+          },{
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+              }
+          }, ]
+      });
+    }
+  }
+  if ($(window).width() < 577) {
+    $('.footer__title').on('click', function(){
+      $(this).next('ul').slideToggle(300);
+    })
   }
 
   //faq
@@ -160,21 +193,5 @@ if (jQuery('[data-review]').length > 0) {
         $(this).find('p').slideToggle(300);
     })
 }
-  // select
-  function select (data,set,dropclass) {
-    if (jQuery(data).length > 0) {
-      jQuery(data).select2({
-        minimumResultsForSearch: Infinity,
-        width: set,
-        dropdownAutoWidth: true,
-        dropdownCssClass: dropclass
-      });
-    }
-  }
-  select ('[data-brand]','100%',"main-drop");
-  select ('[data-model]','100%',"main-drop");
-  select ('[data-engine]','100%',"main-drop");
-  select ('[data-selects]','100%',"wheel-drop");
-
-  
+    
 })

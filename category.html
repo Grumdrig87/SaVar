@@ -25,7 +25,7 @@
     <div class="wrap">
         <header class="header">
             <div class="header__container df jcsb aic">
-                <ul class="header__gender df aic">
+                <ul class="header__gender df aic" data-gender>
                     <li class="active">
                         <a href="#">
                             Мальчик
@@ -37,6 +37,11 @@
                         </a>
                     </li>
                 </ul>
+                <div class="menu_btn" data-burger>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
                 <div class="header__logo">
                     <a href="/" class="logo">
                         <img src="img/logo.png" alt="SaVar">
@@ -68,14 +73,90 @@
                             Избранное
                         </span>
                     </a>
-                    <a href="#" class="header__btn">
-                        <span class="header__btn-img">
-                            <svg width="20" height="20"><use xlink:href="img/sprite.svg#bag"></use></svg>
-                        </span>
-                        <span>
-                            Корзина
-                        </span>
-                    </a>
+                    <div class="header__btn-wrap">
+                        <button class="header__btn header__cart" data-cart>
+                            <span class="header__btn-img">
+                                <svg width="20" height="20"><use xlink:href="img/sprite.svg#bag"></use></svg>
+                            </span>
+                            <span>
+                                Корзина
+                            </span>
+                        </button>
+                        <div class="header__cart-card" data-cartopen>
+                            <div class="header__cart-title">
+                                Корзина
+                            </div>
+                            <div class="header__cart-wrap">
+                                <div class="header__cart-item df">
+                                    <a href="#" class="order__item-wrap df aic">
+                                        <span class="order__item-img obj-cont">
+                                            <img src="img/demo/toy1.png" alt="">
+                                        </span>
+                                    </a>
+                                    <div class="header__cart-right">
+                                        <div class="header__cart-top df jcsb aic">
+                                            <a href="#" class="order__item-wrap df aic">
+                                                <span class="order__item-name">
+                                                    Lorem ipsum dolor sit amet, consectetur
+                                                </span>
+                                            </a>
+                                            <div class="order__item-price">
+                                                27 990 ₽ 
+                                            </div>
+                                        </div>
+                                        <div class="order__item-num df aic">
+                                            <button class="order__item-button df aic jcc" data-minus>
+                                                <svg width="20" height="20"><use xlink:href="img/sprite.svg#minus"></use></svg>
+                                            </button>
+                                            <input type="number" name="quant" value="1" data-quantity>
+                                            <button class="order__item-button df aic jcc" data-plus>
+                                                <svg width="20" height="20"><use xlink:href="img/sprite.svg#plus"></use></svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header__cart-item df">
+                                    <a href="#" class="order__item-wrap df aic">
+                                        <span class="order__item-img obj-cont">
+                                            <img src="img/demo/toy1.png" alt="">
+                                        </span>
+                                    </a>
+                                    <div class="header__cart-right">
+                                        <div class="header__cart-top df jcsb aic">
+                                            <a href="#" class="order__item-wrap df aic">
+                                                <span class="order__item-name">
+                                                    Lorem ipsum dolor sit amet, consectetur
+                                                </span>
+                                            </a>
+                                            <div class="order__item-price">
+                                                27 990 ₽ 
+                                            </div>
+                                        </div>
+                                        <div class="order__item-num df aic">
+                                            <button class="order__item-button df aic jcc" data-minus>
+                                                <svg width="20" height="20"><use xlink:href="img/sprite.svg#minus"></use></svg>
+                                            </button>
+                                            <input type="number" name="quant" value="1" data-quantity>
+                                            <button class="order__item-button df aic jcc" data-plus>
+                                                <svg width="20" height="20"><use xlink:href="img/sprite.svg#plus"></use></svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__cart-total df jcsb">
+                                <div class="order__aside-title">
+                                    Заказ на сумму:
+                                </div>
+                                <div class="order__aside-price">
+                                    79 000 ₽
+                                </div>
+                            </div>
+                            <a href="#" class="btn order__aside-btn">
+                                Оформить заказ
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="header__bottom">
@@ -290,7 +371,7 @@
                                 <div class="best__card-label df aic jcc blue">
                                     <span>ХИТ</span>
                                 </div>
-                                <a href="#" class="best__card-img obj-contain">
+                                <a href="#" class="best__card-img obj-cont">
                                     <img src="img/demo/cater1.png" alt="">
                                 </a>
                                 <div class="category__catalog-price df aic">
@@ -352,7 +433,7 @@
                                 <div class="best__card-label df aic jcc blue">
                                     <span>ХИТ</span>
                                 </div>
-                                <a href="#" class="best__card-img obj-contain">
+                                <a href="#" class="best__card-img obj-cont">
                                     <img src="img/demo/best1.png" alt="">
                                 </a>
                                 <div class="category__catalog-price df aic">
@@ -411,7 +492,7 @@
                         </div>
                         <div class="category__catalog-itemwrap">
                             <div class="category__catalog-item" data-catitem>
-                                <a href="#" class="best__card-img obj-contain">
+                                <a href="#" class="best__card-img obj-cont">
                                     <img src="img/demo/best1.png" alt="">
                                 </a>
                                 <div class="category__catalog-price df aic">
@@ -470,69 +551,7 @@
                         </div>
                         <div class="category__catalog-itemwrap">
                             <div class="category__catalog-item" data-catitem>
-                                <a href="#" class="best__card-img obj-contain">
-                                    <img src="img/demo/best1.png" alt="">
-                                </a>
-                                <div class="category__catalog-price df aic">
-                                    <div class="best__card-price">
-                                        <span>3500</span> ₽
-                                    </div>
-                                    <div class="category__catalog-lastprice">
-                                        <span>7 500</span> ₽
-                                    </div>
-                                </div>
-                                <div class="best__card-line df jcsb aic">
-                                    <a href="#" class="category__catalog-name">
-                                        Черное боди в полоску
-                                    </a>
-                                    <div class="best__card-art">
-                                        Арт. <span>220202</span>
-                                    </div>
-                                </div>
-                                <div class="category__catalog-bottom">
-                                    <div class="category__catalog-bottomcolor">
-                                        <span class="category__catalog-smtitle">
-                                            Цвет
-                                        </span>
-                                        <div class="best__card-type df aic">
-                                            <a href="#" data-color class="best__card-typeitem red active"><span></span></a>
-                                            <a href="#" data-color class="best__card-typeitem yellow"><span></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="category__catalog-bottomsize">
-                                        <span class="category__catalog-smtitle">
-                                            Размер
-                                        </span>
-                                        <ul class="df aic">
-                                            <li class="out">
-                                                <span>
-                                                    23
-                                                </span>
-                                            </li>
-                                            <li>
-                                                <a href="#" data-size>
-                                                    24
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" data-size>
-                                                    25
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="#" class="btn category__btn df jcc">
-                                        В корзину
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="category__catalog-itemwrap">
-                            <div class="category__catalog-item" data-catitem>
-                                <div class="best__card-label df aic jcc blue">
-                                    <span>ХИТ</span>
-                                </div>
-                                <a href="#" class="best__card-img obj-contain">
+                                <a href="#" class="best__card-img obj-cont">
                                     <img src="img/demo/best1.png" alt="">
                                 </a>
                                 <div class="category__catalog-price df aic">
@@ -594,66 +613,7 @@
                                 <div class="best__card-label df aic jcc blue">
                                     <span>ХИТ</span>
                                 </div>
-                                <a href="#" class="best__card-img obj-contain">
-                                    <img src="img/demo/best1.png" alt="">
-                                </a>
-                                <div class="category__catalog-price df aic">
-                                    <div class="best__card-price">
-                                        <span>3500</span> ₽
-                                    </div>
-                                    <div class="category__catalog-lastprice">
-                                        <span>7 500</span> ₽
-                                    </div>
-                                </div>
-                                <div class="best__card-line df jcsb aic">
-                                    <a href="#" class="category__catalog-name">
-                                        Черное боди в полоску
-                                    </a>
-                                    <div class="best__card-art">
-                                        Арт. <span>220202</span>
-                                    </div>
-                                </div>
-                                <div class="category__catalog-bottom">
-                                    <div class="category__catalog-bottomcolor">
-                                        <span class="category__catalog-smtitle">
-                                            Цвет
-                                        </span>
-                                        <div class="best__card-type df aic">
-                                            <a href="#" data-color class="best__card-typeitem red active"><span></span></a>
-                                            <a href="#" data-color class="best__card-typeitem yellow"><span></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="category__catalog-bottomsize">
-                                        <span class="category__catalog-smtitle">
-                                            Размер
-                                        </span>
-                                        <ul class="df aic">
-                                            <li class="out">
-                                                <span>
-                                                    23
-                                                </span>
-                                            </li>
-                                            <li>
-                                                <a href="#" data-size>
-                                                    24
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" data-size>
-                                                    25
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="#" class="btn category__btn df jcc">
-                                        В корзину
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="category__catalog-itemwrap">
-                            <div class="category__catalog-item" data-catitem>
-                                <a href="#" class="best__card-img obj-contain">
+                                <a href="#" class="best__card-img obj-cont">
                                     <img src="img/demo/best1.png" alt="">
                                 </a>
                                 <div class="category__catalog-price df aic">
@@ -715,7 +675,128 @@
                                 <div class="best__card-label df aic jcc blue">
                                     <span>ХИТ</span>
                                 </div>
-                                <a href="#" class="best__card-img obj-contain">
+                                <a href="#" class="best__card-img obj-cont">
+                                    <img src="img/demo/best1.png" alt="">
+                                </a>
+                                <div class="category__catalog-price df aic">
+                                    <div class="best__card-price">
+                                        <span>3500</span> ₽
+                                    </div>
+                                    <div class="category__catalog-lastprice">
+                                        <span>7 500</span> ₽
+                                    </div>
+                                </div>
+                                <div class="best__card-line df jcsb aic">
+                                    <a href="#" class="category__catalog-name">
+                                        Черное боди в полоску
+                                    </a>
+                                    <div class="best__card-art">
+                                        Арт. <span>220202</span>
+                                    </div>
+                                </div>
+                                <div class="category__catalog-bottom">
+                                    <div class="category__catalog-bottomcolor">
+                                        <span class="category__catalog-smtitle">
+                                            Цвет
+                                        </span>
+                                        <div class="best__card-type df aic">
+                                            <a href="#" data-color class="best__card-typeitem red active"><span></span></a>
+                                            <a href="#" data-color class="best__card-typeitem yellow"><span></span></a>
+                                        </div>
+                                    </div>
+                                    <div class="category__catalog-bottomsize">
+                                        <span class="category__catalog-smtitle">
+                                            Размер
+                                        </span>
+                                        <ul class="df aic">
+                                            <li class="out">
+                                                <span>
+                                                    23
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-size>
+                                                    24
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-size>
+                                                    25
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="btn category__btn df jcc">
+                                        В корзину
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category__catalog-itemwrap">
+                            <div class="category__catalog-item" data-catitem>
+                                <a href="#" class="best__card-img obj-cont">
+                                    <img src="img/demo/best1.png" alt="">
+                                </a>
+                                <div class="category__catalog-price df aic">
+                                    <div class="best__card-price">
+                                        <span>3500</span> ₽
+                                    </div>
+                                    <div class="category__catalog-lastprice">
+                                        <span>7 500</span> ₽
+                                    </div>
+                                </div>
+                                <div class="best__card-line df jcsb aic">
+                                    <a href="#" class="category__catalog-name">
+                                        Черное боди в полоску
+                                    </a>
+                                    <div class="best__card-art">
+                                        Арт. <span>220202</span>
+                                    </div>
+                                </div>
+                                <div class="category__catalog-bottom">
+                                    <div class="category__catalog-bottomcolor">
+                                        <span class="category__catalog-smtitle">
+                                            Цвет
+                                        </span>
+                                        <div class="best__card-type df aic">
+                                            <a href="#" data-color class="best__card-typeitem red active"><span></span></a>
+                                            <a href="#" data-color class="best__card-typeitem yellow"><span></span></a>
+                                        </div>
+                                    </div>
+                                    <div class="category__catalog-bottomsize">
+                                        <span class="category__catalog-smtitle">
+                                            Размер
+                                        </span>
+                                        <ul class="df aic">
+                                            <li class="out">
+                                                <span>
+                                                    23
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-size>
+                                                    24
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-size>
+                                                    25
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="btn category__btn df jcc">
+                                        В корзину
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category__catalog-itemwrap">
+                            <div class="category__catalog-item" data-catitem>
+                                <div class="best__card-label df aic jcc blue">
+                                    <span>ХИТ</span>
+                                </div>
+                                <a href="#" class="best__card-img obj-cont">
                                     <img src="img/demo/best1.png" alt="">
                                 </a>
                                 <div class="category__catalog-price df aic">
