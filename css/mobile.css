@@ -1191,6 +1191,13 @@ textarea.donate__input {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 150px);
 }
+.header__cart-item .order__item-wrap {
+  width: auto !important;
+}
+.toys__item-txt {
+  font-size: 15px;
+  line-height: 20px;
+}
 }
 
 @media screen and (max-width: 375px) {
