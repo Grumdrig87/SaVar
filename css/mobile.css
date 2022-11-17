@@ -25,10 +25,6 @@
   .container-l {
     width: 960px;
   }
-  .header__popsearch {
-    width: 738px;
-    right: -131px;
-  }
   .header__nav a {
     font-size: 14px;
     line-height: 17px;
@@ -851,6 +847,40 @@ textarea.donate__input {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
 }
+.category__catalog-item:hover {
+  width: 100%;
+  left: unset;
+  top: 15px;
+  z-index: 3;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+  padding: 43px 16px 23px;
+  -webkit-transform: none;
+     -moz-transform: none;
+      -ms-transform: none;
+       -o-transform: none;
+          transform: none;
+}
+.category__catalog-bottom {
+  display: block;
+}
+.category__catalog-itemwrap {
+  height: auto;
+}
+.category__catalog-item .best__card-img {
+  height: 163px;
+}
+.best__card-img {
+  max-width: 170px;
+  max-height: 170px;
+}
+.category__btn {
+  padding: 15px;
+}
+.category__catalog-item {
+  padding-top: 30px;
+}
 }
 
 
@@ -1197,6 +1227,16 @@ textarea.donate__input {
 .toys__item-txt {
   font-size: 15px;
   line-height: 20px;
+}
+.faq .title-xl,
+.news .title-xl {
+  margin-bottom: 25px;
+}
+.news {
+  padding: 20px 0;
+}
+.prod__descr-txt td {
+  white-space: inherit !important;
 }
 }
 

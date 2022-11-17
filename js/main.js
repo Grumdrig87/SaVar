@@ -19,16 +19,18 @@ jQuery(document).ready(function($) {
       $(this).toggleClass('red');
     })
   }
-  if (jQuery('[data-catitem]').length > 0) {
-    $('[data-catitem]').mouseenter(function(){
-      $(this).addClass('open');
-      $(this).find('.category__catalog-bottom').slideDown(0);
-    })
-    $('[data-catitem]').mouseleave(function(){
-      $(this).find('.category__catalog-bottom').slideUp(0);
-      $(this).removeClass('open');
-    })
-  }
+  if ($(window).width() > 768) {
+      if (jQuery('[data-catitem]').length > 0) {
+        $('[data-catitem]').mouseenter(function(){
+          $(this).addClass('open');
+          $(this).find('.category__catalog-bottom').slideDown(0);
+        })
+        $('[data-catitem]').mouseleave(function(){
+          $(this).find('.category__catalog-bottom').slideUp(0);
+          $(this).removeClass('open');
+        })
+      }
+    }
   if (jQuery('[data-cat]').length > 0) {
     $('[data-cat]').on('click', function(){
       $('[data-cat]').parent().removeClass('active')

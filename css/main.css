@@ -290,6 +290,7 @@ input {
 	max-width: 1600px;
 	margin: 0 auto;
 	padding: 14px 19px 11px;
+	position: relative;
 }
 .header__gender li {
 	min-width: 80px;
@@ -323,6 +324,9 @@ input {
 	bottom: -9px;
 	height: 1px;
 	background: transparent;
+}
+.menu_btn {
+	display: none;
 }
 .header__btn {
 	background: none;
@@ -438,7 +442,6 @@ input {
 }
 .header__search {
 	margin-right: 40px;
-	position: relative;
 	z-index: 6;
 }
 .header__search .header__btn {
@@ -452,10 +455,12 @@ input {
 	        border-radius: 5px;
 	overflow: hidden;
 	display: none;
-	width: 990px;
-	max-width: 990px;
-	top: 140%;
-    right: 40px;
+	width: 68%;
+    max-width: 1130px;
+    top: 109%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
 	pointer-events: none;
 }
 .header__popsearch.open {
@@ -544,7 +549,7 @@ input {
 	background: #000;
 }
 .header__bottom .header__container {
-	padding: 20px 32px 19px;
+	padding: 20px 17px 19px;
 }
 .header__nav a {
 	color: #fff;
@@ -2544,14 +2549,15 @@ input::-webkit-inner-spin-button {
 	   -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 	        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);	
 }
-.order__card-deliverycard p {
+.order__card-deliverycard .order__card-txt {
+	display: block;
 	font-size: 16px;
 	line-height: 19px;
 }
-.order__card-deliverycard p:not(:last-child) {
+.order__card-deliverycard .order__card-txt:not(:last-child) {
 	margin-bottom: 15px;
 }
-.order__card-deliverycard p strong {
+.order__card-deliverycard .order__card-txt strong {
 	font-weight: 700;
 }
 .order__txt {
